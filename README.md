@@ -1,3 +1,5 @@
+[![CodeQL](https://github.com/igorradovanov/system-core-utils/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/igorradovanov/system-core-utils/actions/workflows/github-code-scanning/codeql)[![Python application](https://github.com/igorradovanov/system-core-utils/actions/workflows/python-app.yml/badge.svg)](https://github.com/igorradovanov/system-core-utils/actions/workflows/python-app.yml)
+
 # system-core-utils
 
 ## OS Internals Toolkit (Python)
