@@ -28,7 +28,18 @@ def removeEnd(arr, length):
     if length > 0:
         # Overwrite value and decrease the length
         arr[length - 1] = 0
-def removeEnd(arr, length):
-    if length > 0:
-        #Overwrite value and decrease the length
-        arr[length - 1] = 0
+
+def removeMiddle(arr, i, length):
+    """
+    Removes the element at the middle index of the array and shifts the remaining elements to the left.
+
+    Args:
+        arr (list): The input array.
+        i (int): The index of the middle element to be removed.
+        length (int): The length of the array.
+
+    Returns:
+        None
+    """
+    for index in range(i + 1, length):
+        arr[index - 1] = arr[index]
