@@ -14,16 +14,16 @@ Feel free to explore the codebase, contribute improvements, or use these impleme
 
 ## Contents
 
-- [Arrays](src/arrays.py)
-- [Queues](src/queues.py)
-- [Linked Lists](src/linked_lists.py)
+- [Arrays](arrays/arrays.py)
+- [Queues](queues/queues.py)
+- [Linked Lists](linked_lists/linked_lists.py)
 - [...and more]
 
 ## Usage
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/os-internals-toolkit-python.git
+   git clone https://github.com/igorradovanov/os-internals-toolkit-python.git
    ```
 
 2. Integrate the desired data structures into your Python OS project.
