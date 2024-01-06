@@ -16,9 +16,9 @@ Feel free to explore the codebase, contribute improvements, or use these impleme
 
 ## Contents
 
-- [Arrays](arrays/arrays.py)
-- [Queues](queues/queues.py)
-- [Linked Lists](linked_lists/linked_lists.py)
+- [Arrays](arrays/)
+- [Queues](queues/)
+- [Linked Lists](linked_lists/)
 - [...and more]
 
 ## Usage
