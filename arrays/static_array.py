@@ -81,3 +81,21 @@ def removeDuplicates(self, nums: List[int]) -> int:
             nums[l] = nums[r]
             l = l + 1
     return l
+
+def removeElement(self, nums: List[int], val: int) -> int:
+    """
+    Removes all occurrences of a specified value from the given list.
+
+    Args:
+        nums (List[int]): The list of integers.
+        val (int): The value to be removed.
+
+    Returns:
+        int: The new length of the list after removing the specified value.
+    """
+    i, j = 0, 0
+    for j in range(len(nums)):
+        if nums[j] != val:
+            nums[i] = nums[j]
+            i += 1
+    return i
