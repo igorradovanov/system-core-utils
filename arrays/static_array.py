@@ -1,3 +1,6 @@
+from ast import List
+
+
 def insertEnd(arr, n, length, capacity):
     """
     Inserts an element at the end of the array.
@@ -60,3 +63,21 @@ def removeMiddle(arr, i, length):
     """
     for index in range(i + 1, length):
         arr[index - 1] = arr[index]
+        
+
+def removeDuplicates(self, nums: List[int]) -> int:
+    """
+    Removes duplicates from the given list of integers.
+
+    Args:
+        nums (List[int]): The list of integers.
+
+    Returns:
+        int: The length of the modified list without duplicates.
+    """
+    l = 1
+    for r in range(1, len(nums)):
+        if(nums[r] != nums[r-1]):
+            nums[l] = nums[r]
+            l = l + 1
+    return l
