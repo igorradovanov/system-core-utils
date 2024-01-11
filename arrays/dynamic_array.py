@@ -28,3 +28,35 @@ class DynamicArray:
         if i >= self.size:
             return -1
         return self.arr[i]
+
+    def set(self, i: int, n: int) -> None:
+        """
+        Sets the value at index i in the dynamic array.
+
+        Args:
+            i (int): The index at which to set the value.
+            n (int): The value to set.
+
+        Returns:
+            None
+        """
+        # Reject if asking for i out of bound
+        if self.size == 0:
+            return -1
+        self.arr[i] = n
+
+    def pushback(self, n: int) -> None:
+        """
+        Adds an element to the end of the dynamic array.
+
+        Args:
+            n (int): The element to be added.
+
+        Returns:
+            None
+        """
+        if self.size == self.capacity:
+            self.resize()
+
+        self.arr[self.size] = n
+        self.size += 1
