@@ -41,8 +41,9 @@ class DynamicArray:
             None
         """
         # Reject if asking for i out of bound
-        if self.size == 0:
+        if self.size <= i:
             return -1
+
         self.arr[i] = n
 
     def pushback(self, n: int) -> None:
