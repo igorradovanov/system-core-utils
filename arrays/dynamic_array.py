@@ -60,3 +60,17 @@ class DynamicArray:
 
         self.arr[self.size] = n
         self.size += 1
+
+    def popback(self) -> int:
+        """
+        Removes and returns the last element from the dynamic array.
+
+        Returns:
+            int: The value of the last element that was removed.
+
+        Raises:
+            IndexError: If the dynamic array is empty.
+        """
+        # Soft deletion
+        self.size -= 1
+        return self.arr[self.size]
