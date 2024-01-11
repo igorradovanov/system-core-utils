@@ -85,3 +85,21 @@ class DynamicArray:
         for i in range(self.size):
             new_arr[i] = self.arr[i]
         self.arr = new_arr
+
+    def getSize(self) -> int:
+        """
+        Returns the current size of the dynamic array.
+
+        Returns:
+            int: The current size of the dynamic array.
+        """
+        return self.size
+
+    def getCapacity(self) -> int:
+        """
+        Returns the current capacity of the dynamic array.
+
+        Returns:
+            int: The current capacity of the dynamic array.
+        """
+        return self.capacity
