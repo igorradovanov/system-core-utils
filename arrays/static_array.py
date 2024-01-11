@@ -101,6 +101,16 @@ class StaticArray:
         return i
 
     def shuffle(self, nums: List[int], n: int) -> List[int]:
+        """
+        Shuffles a list of integers by interleaving the first half with the second half.
+
+        Args:
+            nums (List[int]): The list of integers to be shuffled.
+            n (int): The length of the first half of the list.
+
+        Returns:
+            List[int]: The shuffled list of integers.
+        """
         arr = []
         length = len(nums) // 2
         left = nums[:length]
