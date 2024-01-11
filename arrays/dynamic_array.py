@@ -15,16 +15,16 @@ class DynamicArray:
         self.arr = [0] * capacity
 
     def get(self, i: int) -> int:
-            """
-            Retrieves the element at the specified index.
+        """
+        Retrieves the element at the specified index.
 
-            Args:
-                i (int): The index of the element to retrieve.
+        Args:
+            i (int): The index of the element to retrieve.
 
-            Returns:
-                int: The element at the specified index, or -1 if the index is out of range.
-            """
-            # Reject if i is greater than arr size
-            if i >= self.size:
-                return -1
-            return self.arr[i]
+        Returns:
+            int: The element at the specified index, or -1 if the index is out of range.
+        """
+        # Reject if i is greater than arr size
+        if i >= self.size:
+            return -1
+        return self.arr[i]
