@@ -104,3 +104,26 @@ class DynamicArray:
             int: The current capacity of the dynamic array.
         """
         return self.capacity
+
+    def duplicateArray(self, nums):
+        """
+        Creates a new array by duplicating the elements of the given array.
+
+        Args:
+            nums (list): The original array.
+
+        Returns:
+            list: The new array with duplicated elements.
+        """
+        n = len(nums)  # Get the length of the original array
+        ans = [0] * (2 * n)  # Create a new array of length 2n initialized with zeros
+
+        # Copy elements from nums to the first half of ans
+        for i in range(n):
+            ans[i] = nums[i]
+
+        # Copy elements from nums to the second half of ans
+        for i in range(n, 2 * n):
+            ans[i] = nums[i - n]
+
+        return ans

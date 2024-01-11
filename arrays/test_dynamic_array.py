@@ -73,3 +73,23 @@ def test_popback():
 
 
 test_popback()
+from dynamic_array import DynamicArray
+
+
+def test_duplicateArray():
+    # Test case 1: Duplicate an array with even number of elements
+    arr = DynamicArray(5)
+    test = [1, 2, 3]
+    expected = [1, 2, 3, 1, 2, 3]
+    assert arr.duplicateArray(test) == expected
+
+    # Test case 2: Duplicate an array with odd number of elements
+    arr = DynamicArray(5)
+    test = [1, 2, 3, 4]
+    expected = [1, 2, 3, 4, 1, 2, 3, 4]
+    assert arr.duplicateArray(test) == expected
+
+    print("All test cases pass")
+
+
+test_duplicateArray()
